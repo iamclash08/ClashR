@@ -19,7 +19,7 @@ def _supercell_get(path):
     return requests.get(url, headers=headers, timeout=10)
 
 @require_GET
-def player_detail(request, tag):
+def player_profile(request, tag):
     tag_clean = tag.lstrip('#')
     try:
         r = _supercell_get(f"/players/%23{tag_clean}")

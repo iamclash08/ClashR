@@ -38,7 +38,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'corsheaders',
+    'corsheaders', 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -135,10 +135,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Allowed hosts and CORS for local development
 ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 
-# For dev only — allow your Vite dev server origins
+
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",   # Vite default
-    "http://127.0.0.1:5173"
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:5174",
+    "http://127.0.0.1:5174",
 ]
 
 # If you prefer to allow all origins for quick local dev (NOT for production):
